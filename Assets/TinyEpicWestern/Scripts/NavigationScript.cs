@@ -9,6 +9,7 @@ public class NavigationScript : MonoBehaviour
     public List<Image> images = null;
     public string nextSceneName;
     public string prevSceneName;
+    private bool canGoToNextScene = false;
 
     private int currentInfo;
 
@@ -30,6 +31,10 @@ public class NavigationScript : MonoBehaviour
 
     public void nextInstruction()
     {
+        if (canGoToNextScene)
+        {
+            nextScene();
+        }
         if (currentInfo < images.Count) {
             if ((currentInfo + 1) < images.Count)
             {
@@ -37,11 +42,10 @@ public class NavigationScript : MonoBehaviour
                 images[currentInfo + 1].enabled = true;
                 currentInfo++;
             }
-        }
-
-        if ((currentInfo +1) >= images.Count)
-        {
-            nextScene();
+            if ((currentInfo + 1) >= images.Count)
+            {
+                canGoToNextScene = true;
+            }
         }
         Debug.Log(currentInfo);
         

@@ -865,7 +865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   images: []
-  nextSceneName: '[Name of Scene To Load]'
+  nextSceneName: 4GameSetup
   prevSceneName: 2BossCard
 --- !u!43 &1253320021
 Mesh:
