@@ -39,5 +39,9 @@ public class RevealObject : MonoBehaviour
         {
             anObject[4].SetActive(true);
         }
+        if (timeLeft >= delayTime + 10)
+        {
+            anObject[5].SetActive(true);
+        }
     }
 }
