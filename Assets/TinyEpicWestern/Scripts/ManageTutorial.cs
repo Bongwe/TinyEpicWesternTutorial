@@ -24,14 +24,9 @@ public class ManageTutorial : MonoBehaviour
     {
         if (index < gameLessons.Length)
         {
-            //int prevObjectIndex = index - 1;
-            //if (prevObjectIndex > -1)
-            //{
-            //    GameObject child = gameLessons[prevObjectIndex].transform.GetChild(0).gameObject;
-            //    child.SetActive(false);
-            //}
-            //GameObject child = gameLessons[index].transform.GetChild(0).gameObject;
-            //child.SetActive(false);
+            diableAnimation(index - 1);
+            enableAnimation(index);
+           
             gameLessons[index].SetActive(true);
             index++;
             showCurrentInstruction();
@@ -41,6 +36,30 @@ public class ManageTutorial : MonoBehaviour
     public void showCurrentInstruction()
     {
         gameInstructions[index].GetComponent<ManageMessage>().displayInstrction();
+    }
+
+    private void enableAnimation(int index)
+    {
+        GameObject hand = GameObject.Find(gameLessons[index].name + "Borders");
+        for (int count = 0; count < hand.transform.childCount; count++)
+        {
+            Animator animator = hand.transform.GetChild(count).GetComponent<Animator>();
+            animator.enabled = true;
+        }
+    }
+
+    private void diableAnimation(int index)
+    {
+        if(index >= 0)
+        {
+            GameObject hand = GameObject.Find(gameLessons[index].name + "Borders");
+            for (int count = 0; count < hand.transform.childCount; count++)
+            {
+                Animator animator = hand.transform.GetChild(count).GetComponent<Animator>();
+                animator.SetBool("StopFlash", true);
+            }
+        }
+        
     }
 
 
