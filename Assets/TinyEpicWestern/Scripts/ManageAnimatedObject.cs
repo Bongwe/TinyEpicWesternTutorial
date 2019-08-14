@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManageAnimation : MonoBehaviour
+public class ManageAnimatedObject : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        Animator animator = gameObject.GetComponent<Animator>();
-        animator.enabled = false;
+        
     }
 
     // Update is called once per frame
@@ -17,4 +16,8 @@ public class ManageAnimation : MonoBehaviour
         
     }
 
+    public void activateChildObject()
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
+    }
 }
