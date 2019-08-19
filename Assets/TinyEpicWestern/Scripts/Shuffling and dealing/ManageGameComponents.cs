@@ -5,6 +5,7 @@ using UnityEngine;
 public class ManageGameComponents : MonoBehaviour
 {
     public GameObject[] gameComponents;
+    public AudioSource clickSound;
 
     private int index = 0;
     // Start is called before the first frame update
@@ -21,6 +22,7 @@ public class ManageGameComponents : MonoBehaviour
 
    public void nextInstruction()
     {
+        clickSound.Play();
         if (index < gameComponents.Length)
         {
             index++;
@@ -38,6 +40,7 @@ public class ManageGameComponents : MonoBehaviour
 
     public void prevInstruction()
     {
+        clickSound.Play();
         if (index > 0)
         {
             index--;
