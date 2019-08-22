@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ManageGameComponents : MonoBehaviour
 {
+   private int revealCardAtIndex = 5; 
+
+    public GameObject gameComponentKeepVisible;
     public GameObject[] gameComponents;
     public AudioSource clickSound;
 
@@ -17,13 +20,19 @@ public class ManageGameComponents : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(index >= revealCardAtIndex)
+        {
+            gameComponentKeepVisible.SetActive(true);
+        } else if (index <= revealCardAtIndex)
+        {
+            gameComponentKeepVisible.SetActive(false);
+        }
     }
 
    public void nextInstruction()
     {
         clickSound.Play();
-        if (index < gameComponents.Length)
+        if (index < (gameComponents.Length - 1))
         {
             index++;
             int nextIndex = index - 1;
