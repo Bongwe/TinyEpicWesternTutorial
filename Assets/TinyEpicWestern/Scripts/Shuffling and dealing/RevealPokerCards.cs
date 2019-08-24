@@ -5,6 +5,8 @@ using UnityEngine;
 public class RevealPokerCards : MonoBehaviour
 {
     public GameObject[] pokerCards;
+    public AudioSource dealPokerCard;
+    public AudioSource removePokerCard;
 
     private float currentTime = 0;
     private float targetTime = 1;
@@ -24,6 +26,7 @@ public class RevealPokerCards : MonoBehaviour
         if (currentTime >= targetTime && index < pokerCards.Length && revealCards == true)
         {
             pokerCards[index].SetActive(true);
+            dealPokerCard.Play();
             currentTime = 0;
             index++;
             if (index >= pokerCards.Length)
@@ -36,6 +39,7 @@ public class RevealPokerCards : MonoBehaviour
         if (currentTime >= targetTime && index <= pokerCards.Length && revealCards == false)
         {
             pokerCards[index].SetActive(false);
+            removePokerCard.Play();
             currentTime = 0;
             index++;
             if (index == pokerCards.Length)
