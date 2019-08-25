@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="ScoutBossCard" size="600.000000 416.988403" />
     <ImageTarget name="PokerCard" size="260.000000 369.733826" />
     <ImageTarget name="WantedCard" size="11.000000 15.512820" />
     <ImageTarget name="BuildingCard" size="11.000000 16.012659" />
