@@ -5,10 +5,16 @@ using UnityEngine;
 public class ManageAnimation : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         Animator animator = gameObject.GetComponent<Animator>();
         animator.enabled = false;
+    }
+
+    void Start()
+    {
+      
     }
 
     // Update is called once per frame
