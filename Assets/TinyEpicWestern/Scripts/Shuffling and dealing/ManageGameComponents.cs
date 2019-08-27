@@ -20,10 +20,10 @@ public class ManageGameComponents : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(index >= revealCardAtIndex)
+        if(index >= revealCardAtIndex && gameComponentKeepVisible != null)
         {
             gameComponentKeepVisible.SetActive(true);
-        } else if (index <= revealCardAtIndex)
+        } else if (index <= revealCardAtIndex && gameComponentKeepVisible != null)
         {
             gameComponentKeepVisible.SetActive(false);
         }
