@@ -66,4 +66,9 @@ public class ManageGameComponents : MonoBehaviour
         }
     }
 
+    public void quitAppliaction()
+    {
+        Application.Quit();
+    }
+
 }
