@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VoiceOverHandler : MonoBehaviour
+public class ReadingHandler : MonoBehaviour
 {
-
-    public AudioSource voiceOver;
+    public GameObject description;
     public AudioSource buttonClick;
+
+    private bool isActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,11 @@ public class VoiceOverHandler : MonoBehaviour
         
     }
 
-    public void playVoiceOver()
+    public void showDescription()
     {
         buttonClick.Play();
-        voiceOver.Play();
+        isActive = !isActive;
+        Debug.Log(isActive);
+        description.SetActive(isActive);
     }
 }
