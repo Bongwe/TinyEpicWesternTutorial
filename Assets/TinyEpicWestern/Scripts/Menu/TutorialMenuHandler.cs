@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class TutorialMenuHandler : MonoBehaviour
 {
     public AudioSource buttonClick;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,22 +18,26 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void mainMenuScene()
+    public void loadShufflingAndDealingTut()
     {
         buttonClick.Play();
-        SceneManager.LoadSceneAsync("1.0 Menu");
     }
 
-    public void gameplayScene()
+    public void loadPossePlacementTut()
     {
         buttonClick.Play();
         SceneManager.LoadSceneAsync("1.1 - Menu Gameplay");
     }
 
-    public void tutorialScene()
+    public void loadResolutionTut()
     {
         buttonClick.Play();
-        SceneManager.LoadSceneAsync("1.9 Unboxing");
+        SceneManager.LoadSceneAsync("1.1 - Menu Gameplay");
     }
 
+    public void loadBuyTut()
+    {
+        buttonClick.Play();
+        SceneManager.LoadSceneAsync("1.1 - Menu Gameplay");
+    }
 }
