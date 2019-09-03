@@ -6,75 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TinyEpicWestern/Scenes/1.0 Menu.unity
+    path: Assets/TinyEpicWestern/Scenes/1-MainMenu.unity
     guid: 75c701828562e6348ab15fde6bee3efb
   - enabled: 1
-    path: Assets/TinyEpicWestern/Scenes/1.1 - Menu Gameplay.unity
+    path: Assets/TinyEpicWestern/Scenes/2-Gameplay.unity
     guid: fdd4084a27902e14198ac9336a0f5b9e
   - enabled: 1
-    path: Assets/TinyEpicWestern/Scenes/1.2 Menu Tutorial.unity
-    guid: 5d7d0b86be91e5143ba76e692152e616
-  - enabled: 1
-    path: Assets/TinyEpicWestern/Scenes/1.9 Unboxing.unity
+    path: Assets/TinyEpicWestern/Scenes/4-Unboxing.unity
     guid: c2eb09ff02871ea48a7aa4148a9672e7
+  - enabled: 1
+    path: Assets/TinyEpicWestern/Scenes/5-GameSetup.unity
+    guid: effffb229fd452842898e9834010c788
+  - enabled: 1
+    path: Assets/TinyEpicWestern/Scenes/6 Phase 1.unity
+    guid: 074ae902c945321489f948af82d02a5b
+  - enabled: 1
+    path: Assets/TinyEpicWestern/Scenes/7 Phase2.unity
+    guid: b3cb665578c5f164a99ed23358f47de3
+  - enabled: 1
+    path: Assets/TinyEpicWestern/Scenes/8 Phase 3.unity
+    guid: 213feec42031a1744935a985bfc46e00
   - enabled: 0
-    path: Assets/SamplesResources/Scenes/0-Splash.unity
-    guid: 7238041e8d31f4d439b8851a5d4bb6fa
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/1-Menu.unity
-    guid: 1763269b9427b4a44957006a02f06c30
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/2-Loading.unity
-    guid: 22b8f383624ec49ef986b9155d212ac1
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-CloudReco.unity
-    guid: e434bc354d6d54b899b4fbf77b3118a3
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-CylinderTargets.unity
-    guid: b336b80db71704028995a1ea175dad4a
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-GroundPlane.unity
-    guid: 3151807591542436f9ddfbf021a1545d
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-ImageTargets.unity
-    guid: fa05b4f596c584dc79960294a1b601cc
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-ModelTargets.unity
-    guid: 2a35bde7bbb01499a82f7c9ec70afc87
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-MultiTargets.unity
-    guid: d5e3b9c64d95e4105b0f8c39cd4dc3bd
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-ObjectReco.unity
-    guid: 633a6cb9bd1704671bdefaba667099b2
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-UserDefinedTargets.unity
-    guid: 89ed636faaaf34959983482a021ac4e6
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-VirtualButtons.unity
-    guid: 319d9b92c918a47e192e3d3382615bc8
-  - enabled: 0
-    path: Assets/SamplesResources/Scenes/3-VuMarks.unity
-    guid: d9b53b25a285640cf8ac170a80603e34
-  - enabled: 0
-    path: Assets/TinyEpicWestern/Scenes/1HowToPlay.unity
+    path: Assets/TinyEpicWestern/Scenes/15-HowTo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/TinyEpicWestern/Scenes/2BossCard.unity
+    path: Assets/TinyEpicWestern/Scenes/16-BossCard.unity
     guid: e53fecacf595c5f4a90d2c429475b6ea
   - enabled: 0
-    path: Assets/TinyEpicWestern/Scenes/3InfluenceMarkers.unity
+    path: Assets/TinyEpicWestern/Scenes/17-InfluenceMarkers.unity
     guid: 3ddc2bbea5cc58341b2cc541ce10bc96
-  - enabled: 0
-    path: Assets/TinyEpicWestern/Scenes/4GameSetup.unity
-    guid: effffb229fd452842898e9834010c788
-  - enabled: 0
-    path: Assets/TinyEpicWestern/Scenes/5 Phase 1 - Shuffling and dealing.unity
-    guid: 074ae902c945321489f948af82d02a5b
-  - enabled: 0
-    path: Assets/TinyEpicWestern/Scenes/6 Phase2 - Posse Placement.unity
-    guid: b3cb665578c5f164a99ed23358f47de3
-  - enabled: 0
-    path: Assets/TinyEpicWestern/Scenes/7 Phase 3 - Resolution.unity
-    guid: 213feec42031a1744935a985bfc46e00
   m_configObjects: {}

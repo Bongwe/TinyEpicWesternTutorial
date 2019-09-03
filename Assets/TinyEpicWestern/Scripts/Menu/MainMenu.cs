@@ -7,6 +7,9 @@ public class MainMenu : MonoBehaviour
 {
     public AudioSource buttonClick;
 
+    public string nextSceneName = "";
+    public string prevSceneName = "";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,19 +25,37 @@ public class MainMenu : MonoBehaviour
     public void mainMenuScene()
     {
         buttonClick.Play();
-        SceneManager.LoadSceneAsync("1.0 Menu");
+        SceneManager.LoadSceneAsync("1-MainMenu");
     }
 
     public void gameplayScene()
     {
         buttonClick.Play();
-        SceneManager.LoadSceneAsync("1.1 - Menu Gameplay");
+        SceneManager.LoadSceneAsync("2-Gameplay");
     }
 
     public void tutorialScene()
     {
         buttonClick.Play();
-        SceneManager.LoadSceneAsync("1.9 Unboxing");
+        SceneManager.LoadSceneAsync("4-Unboxing");
+    }
+
+    public void nextScene()
+    {
+        buttonClick.Play();
+        if (nextSceneName != "")
+        {
+            SceneManager.LoadSceneAsync(nextSceneName);
+        }
+    }
+
+    public void prevScene()
+    {
+        buttonClick.Play();
+        if (nextSceneName != "")
+        {
+            SceneManager.LoadSceneAsync(prevSceneName);
+        }
     }
 
 }
