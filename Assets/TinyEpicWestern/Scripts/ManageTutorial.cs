@@ -6,6 +6,8 @@ public class ManageTutorial : MonoBehaviour
 {
     public GameObject[] gameLessons;
     public GameObject[] gameInstructions;
+    public AudioSource buttonClick;
+
     private int index = 0;
 
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class ManageTutorial : MonoBehaviour
 
     public void showNextLesson()
     {
+        buttonClick.Play();
         if (index < gameLessons.Length)
         {
             diableAnimation(index - 1);
@@ -35,6 +38,7 @@ public class ManageTutorial : MonoBehaviour
 
     public void showCurrentInstruction()
     {
+        buttonClick.Play();
         gameInstructions[index].GetComponent<ManageMessage>().displayInstrction();
     }
 
