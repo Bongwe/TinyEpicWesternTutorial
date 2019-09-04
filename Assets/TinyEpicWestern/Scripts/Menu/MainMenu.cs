@@ -40,6 +40,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync("4-Unboxing");
     }
 
+        public void creditsScene()
+    {
+        buttonClick.Play();
+        SceneManager.LoadSceneAsync("4.1 Credits");
+    }
+
     public void nextScene()
     {
         buttonClick.Play();
@@ -56,6 +62,11 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadSceneAsync(prevSceneName);
         }
+    }
+
+    public void quitAppliaction()
+    {
+        Application.Quit();
     }
 
 }
