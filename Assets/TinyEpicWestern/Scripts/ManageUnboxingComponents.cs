@@ -9,6 +9,7 @@ public class ManageUnboxingComponents : MonoBehaviour
     public GameObject innerGameBox;
     public GameObject componentsAndDescriptions;
     public GameObject[] animatedGameComponents;
+    public GameObject competeMessage;
 
     public AudioSource buttonClick;
     public AudioSource unboxingSound;
@@ -46,6 +47,10 @@ public class ManageUnboxingComponents : MonoBehaviour
             animatedGameComponents[componentIndex].SetActive(true);
             componentIndex++;
             currentTime = 0;
+        }
+        if (componentIndex >= animatedGameComponents.Length)
+        {
+            competeMessage.SetActive(true);
         }
 
     }
