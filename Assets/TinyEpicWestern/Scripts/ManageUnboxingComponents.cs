@@ -10,6 +10,8 @@ public class ManageUnboxingComponents : MonoBehaviour
     public GameObject componentsAndDescriptions;
     public GameObject[] animatedGameComponents;
 
+    public AudioSource buttonClick;
+    public AudioSource unboxingSound;
 
     private bool isBoxOpen = false;
     private float currentTime = 0;
@@ -32,8 +34,10 @@ public class ManageUnboxingComponents : MonoBehaviour
 
     public void playAnimation()
     {
+        buttonClick.Play();
         if (isBoxOpen == false)
         {
+            unboxingSound.Play();
             gameBox.SetActive(false);
             gameBoxAnimated.SetActive(true);
             displayInnerBox();

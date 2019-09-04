@@ -43,7 +43,7 @@ public class MainMenu : MonoBehaviour
         public void creditsScene()
     {
         buttonClick.Play();
-        SceneManager.LoadSceneAsync("4.1 Credits");
+        SceneManager.LoadSceneAsync("3.1 Credits");
     }
 
     public void nextScene()
@@ -66,6 +66,7 @@ public class MainMenu : MonoBehaviour
 
     public void quitAppliaction()
     {
+        buttonClick.Play();
         Application.Quit();
     }
 

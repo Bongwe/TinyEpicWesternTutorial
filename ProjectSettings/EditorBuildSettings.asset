@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/TinyEpicWestern/Scenes/8 Phase 3.unity
     guid: 213feec42031a1744935a985bfc46e00
   - enabled: 1
-    path: Assets/TinyEpicWestern/Scenes/4.1 Credits.unity
+    path: Assets/TinyEpicWestern/Scenes/3.1 Credits.unity
     guid: d3fe282cb1d364c4b9a5304857b08b4a
   - enabled: 0
     path: Assets/TinyEpicWestern/Scenes/15-HowTo.unity
