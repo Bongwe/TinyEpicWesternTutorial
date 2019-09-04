@@ -52,7 +52,7 @@ public class MainMenu : MonoBehaviour
     public void prevScene()
     {
         buttonClick.Play();
-        if (nextSceneName != "")
+        if (prevSceneName != "")
         {
             SceneManager.LoadSceneAsync(prevSceneName);
         }

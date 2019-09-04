@@ -1601,7 +1601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &629069499
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2215,6 +2215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClick: {fileID: 1290700361}
+  nextSceneName: 
+  prevSceneName: 
 --- !u!1 &1264114947
 GameObject:
   m_ObjectHideFlags: 0
