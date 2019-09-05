@@ -9,6 +9,7 @@ public class ManageTutorial : MonoBehaviour
     public AudioSource buttonClick;
 
     private int index = 0;
+    private int tempIndex = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class ManageTutorial : MonoBehaviour
     public void showNextLesson()
     {
         buttonClick.Play();
+        tempIndex++;
         if (index < gameLessons.Length)
         {
             diableAnimation(index - 1);
@@ -33,6 +35,12 @@ public class ManageTutorial : MonoBehaviour
             gameLessons[index].SetActive(true);
             index++;
             showCurrentInstruction();
+        }
+        Debug.Log(tempIndex);
+        if (tempIndex >= 6)
+        {
+            gameInstructions[5].SetActive(false);
+            gameInstructions[6].SetActive(true);
         }
     }
 
