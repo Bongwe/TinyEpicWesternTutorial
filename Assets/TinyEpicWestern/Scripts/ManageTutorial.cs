@@ -7,6 +7,7 @@ public class ManageTutorial : MonoBehaviour
     public GameObject[] gameLessons;
     public GameObject[] gameInstructions;
     public AudioSource buttonClick;
+    public AudioSource dealSound;
 
     private int index = 0;
     private int tempIndex = 0;
@@ -30,7 +31,8 @@ public class ManageTutorial : MonoBehaviour
         if (index < gameLessons.Length)
         {
             diableAnimation(index - 1);
-            enableAnimation(index);
+                enableAnimation(index);
+
            
             gameLessons[index].SetActive(true);
             index++;
@@ -73,6 +75,8 @@ public class ManageTutorial : MonoBehaviour
         }
         
     }
+
+
 
 
 }
