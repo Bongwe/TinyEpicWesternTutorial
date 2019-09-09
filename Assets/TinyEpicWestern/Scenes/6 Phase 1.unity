@@ -7923,6 +7923,7 @@ GameObject:
   - component: {fileID: 2110658122}
   - component: {fileID: 2110658124}
   - component: {fileID: 2110658123}
+  - component: {fileID: 2110658125}
   m_Layer: 5
   m_Name: 1 Shuffling and dealing
   m_TagString: Untagged
@@ -7986,6 +7987,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110658121}
   m_CullTransparentMesh: 0
+--- !u!114 &2110658125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110658121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c69b59fa1ab924f408e8173b5bea5ada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2124213831
 GameObject:
   m_ObjectHideFlags: 0
