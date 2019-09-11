@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ManageMessage : MonoBehaviour
 {
-    public int delayTime = 5;
+    private int delayTime = 7;
     private float currentTime = 0;
     private bool updateTime = true;
 
