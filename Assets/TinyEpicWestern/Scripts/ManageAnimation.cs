@@ -9,7 +9,8 @@ public class ManageAnimation : MonoBehaviour
     void Awake()
     {
         Animator animator = gameObject.GetComponent<Animator>();
-        animator.enabled = false;
+        animator.enabled = true;
+        Invoke("stopAnimation", 8);//this will happen after 2 seconds
     }
 
     void Start()
@@ -23,4 +24,16 @@ public class ManageAnimation : MonoBehaviour
         
     }
 
+    public void playAnimation()
+    {
+        Animator animator = gameObject.GetComponent<Animator>();
+        animator.enabled = true;
+        Invoke("stopAnimation", 8);//this will happen after 2 seconds
+    }
+
+    public void stopAnimation()
+    {
+        Animator animator = gameObject.GetComponent<Animator>();
+        animator.enabled = false;
+    }
 }
