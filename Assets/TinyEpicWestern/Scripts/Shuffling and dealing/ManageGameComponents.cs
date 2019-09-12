@@ -43,6 +43,10 @@ public class ManageGameComponents : MonoBehaviour
             if (index < gameComponents.Length)
             {
                 gameComponents[index].SetActive(true);
+                if (gameComponents[index].tag == "anInstruction")
+                {
+                    gameComponents[index].GetComponent<AudioSource>().Play();
+                }
             }
         }
     }
@@ -69,6 +73,25 @@ public class ManageGameComponents : MonoBehaviour
     public void quitAppliaction()
     {
         Application.Quit();
+    }
+    public void showCurrentInstruction()
+    {
+        clickSound.Play();
+        if (gameComponents[index].tag == "anInstruction")
+        {
+            gameComponents[index].GetComponent<ManageMessage>().displayInstrction();
+            gameComponents[index].GetComponent<AudioSource>().Play();
+
+        }
+        else
+        {
+            int prevIndex = index - 1;
+            if (prevIndex >= 0)
+            {
+                gameComponents[prevIndex].GetComponent<ManageMessage>().displayInstrction();
+                gameComponents[prevIndex].GetComponent<AudioSource>().Play();
+            }
+        }
     }
 
 }
