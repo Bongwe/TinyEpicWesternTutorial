@@ -624,15 +624,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171387460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5400003, y: -0.01, z: 2.6939995}
-  m_LocalScale: {x: 0.60000014, y: 0, z: 0.60000014}
+  m_LocalPosition: {x: 19.460144, y: -5, z: -170.69421}
+  m_LocalScale: {x: 114.66903, y: 0, z: 114.66903}
   m_Children:
   - {fileID: 921984259}
   - {fileID: 1672093853}
   - {fileID: 1434722671}
   - {fileID: 1699167223}
   - {fileID: 555001499}
-  m_Father: {fileID: 530814516}
+  m_Father: {fileID: 714025768}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &172241008
@@ -817,6 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5601b21e38504c8c4e67ceaae7a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 7
 --- !u!114 &191531706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3077,13 +3078,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530814515}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.64000005, y: 0, z: -2.325}
-  m_LocalScale: {x: 500, y: 500, z: 500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 171387461}
-  - {fileID: 1246858665}
-  - {fileID: 1961985257}
+  - {fileID: 714025768}
   m_Father: {fileID: 2067543166}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3112,7 +3111,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 838525300}
+  - {fileID: 672773630}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3174,8 +3173,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/TinyEpicWesternTutorial.xml
   mAspectRatio: 0.6984733
   mImageTargetType: 0
-  mWidth: 500
-  mHeight: 349.23663
+  mWidth: 1
+  mHeight: 0.6984733
 --- !u!1 &555001498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,6 +3206,34 @@ Transform:
   m_Father: {fileID: 171387461}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &672773630
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'TheCourtHouseMaterial
+
+    245722'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 728cae6b2a2a4e0faeed1b8eac20343a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &696356117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3370,6 +3397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5601b21e38504c8c4e67ceaae7a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 7
 --- !u!114 &705603587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3503,6 +3531,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &714025767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714025768}
+  m_Layer: 0
+  m_Name: AllComponents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &714025768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714025767}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4, y: 0, z: 2.809}
+  m_LocalScale: {x: 0.004, y: 0.004, z: 0.004}
+  m_Children:
+  - {fileID: 171387461}
+  - {fileID: 1246858665}
+  - {fileID: 1961985257}
+  m_Father: {fileID: 530814516}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &729825301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4064,34 +4125,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!21 &838525300
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'TheCourtHouseMaterial
-
-    182276'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 728cae6b2a2a4e0faeed1b8eac20343a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &841738623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4825,6 +4858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5601b21e38504c8c4e67ceaae7a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 7
 --- !u!114 &955187856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5035,6 +5069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5601b21e38504c8c4e67ceaae7a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 7
 --- !u!114 &966979982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6765,6 +6800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5601b21e38504c8c4e67ceaae7a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 7
 --- !u!114 &1236133439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6922,8 +6958,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246858664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54, y: 0, z: 2.694}
-  m_LocalScale: {x: 0.6, y: 0, z: 0.6}
+  m_LocalPosition: {x: 19.459991, y: 0, z: -170.69397}
+  m_LocalScale: {x: 114.66901, y: 0, z: 114.66901}
   m_Children:
   - {fileID: 1576914402}
   - {fileID: 1073831321}
@@ -6931,7 +6967,7 @@ Transform:
   - {fileID: 307322613}
   - {fileID: 1166475473}
   - {fileID: 1381385699}
-  m_Father: {fileID: 530814516}
+  m_Father: {fileID: 714025768}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1264023640
@@ -10493,6 +10529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5601b21e38504c8c4e67ceaae7a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 7
 --- !u!114 &1912307281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10860,15 +10897,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961985256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54, y: 0, z: 2.694}
-  m_LocalScale: {x: 0.6, y: 0, z: 0.6}
+  m_LocalPosition: {x: 19.459991, y: 0, z: -170.69397}
+  m_LocalScale: {x: 114.66901, y: 0, z: 114.66901}
   m_Children:
   - {fileID: 502159531}
   - {fileID: 808572685}
   - {fileID: 963565053}
   - {fileID: 1707849462}
   - {fileID: 1833287749}
-  m_Father: {fileID: 530814516}
+  m_Father: {fileID: 714025768}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2067543161
@@ -11034,6 +11071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c5601b21e38504c8c4e67ceaae7a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayTime: 7
 --- !u!114 &2106508183
 MonoBehaviour:
   m_ObjectHideFlags: 0

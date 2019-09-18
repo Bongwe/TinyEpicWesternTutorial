@@ -39,6 +39,11 @@ public class ManageGameComponents : MonoBehaviour
             if (nextIndex >= 0)
             {
                 gameComponents[nextIndex].SetActive(false);
+                if (gameComponents[nextIndex].tag == "aCombo")
+                {
+                    gameComponents[nextIndex].GetComponent<RevealInstructionandCompo>().setActive(false);
+
+                }
             }
             if (index < gameComponents.Length)
             {
@@ -46,6 +51,13 @@ public class ManageGameComponents : MonoBehaviour
                 if (gameComponents[index].tag == "anInstruction")
                 {
                     gameComponents[index].GetComponent<AudioSource>().Play();
+                }
+                if (gameComponents[index].tag == "aCombo")
+                {
+                    gameComponents[index].GetComponent<RevealInstructionandCompo>().setActive(true);
+                    gameComponents[index].GetComponent<RevealInstructionandCompo>().displayInstrction();
+                    gameComponents[index].GetComponent<RevealInstructionandCompo>().playAudio();
+
                 }
             }
         }
@@ -61,11 +73,27 @@ public class ManageGameComponents : MonoBehaviour
             if (prevIndex < gameComponents.Length)
             {
                 gameComponents[prevIndex].SetActive(false);
+                if (gameComponents[prevIndex].tag == "aCombo")
+                {
+                    gameComponents[prevIndex].GetComponent<RevealInstructionandCompo>().setActive(false);
+
+                }
             }
             Debug.Log(index);
             if (index >= 0)
             {
                 gameComponents[index].SetActive(true);
+                if (gameComponents[index].tag == "anInstruction")
+                {
+                    gameComponents[index].GetComponent<AudioSource>().Play();
+                }
+                if (gameComponents[index].tag == "aCombo")
+                {
+                    gameComponents[index].GetComponent<RevealInstructionandCompo>().setActive(true);
+                    gameComponents[index].GetComponent<RevealInstructionandCompo>().displayInstrction();
+                    gameComponents[index].GetComponent<RevealInstructionandCompo>().playAudio();
+
+                }
             }
         }
     }
@@ -81,6 +109,12 @@ public class ManageGameComponents : MonoBehaviour
         {
             gameComponents[index].GetComponent<ManageMessage>().displayInstrction();
             gameComponents[index].GetComponent<AudioSource>().Play();
+
+        }
+        if (gameComponents[index].tag == "aCombo")
+        {
+            gameComponents[index].GetComponent<RevealInstructionandCompo>().displayInstrction();
+            gameComponents[index].GetComponent<RevealInstructionandCompo>().playAudio();
 
         }
         else
