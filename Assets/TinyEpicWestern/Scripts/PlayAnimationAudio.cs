@@ -24,6 +24,7 @@ public class PlayAnimationAudio : MonoBehaviour
             if (currentTime >= delayTime)
             {
                 playAnimationAudio();
+                currentTime = 0;
             }
         }
     }
