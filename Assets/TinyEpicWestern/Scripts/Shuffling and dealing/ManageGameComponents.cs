@@ -50,7 +50,11 @@ public class ManageGameComponents : MonoBehaviour
                 gameComponents[index].SetActive(true);
                 if (gameComponents[index].tag == "anInstruction")
                 {
-                    gameComponents[index].GetComponent<AudioSource>().Play();
+                    AudioSource audioSource = gameComponents[index].GetComponent<AudioSource>();
+                    if(audioSource != null)
+                    {
+                        audioSource.Play();
+                    }
                 }
                 if (gameComponents[index].tag == "aCombo")
                 {
@@ -108,10 +112,14 @@ public class ManageGameComponents : MonoBehaviour
         if (gameComponents[index].tag == "anInstruction")
         {
             gameComponents[index].GetComponent<ManageMessage>().displayInstrction();
-            gameComponents[index].GetComponent<AudioSource>().Play();
+            AudioSource audioSource = gameComponents[index].GetComponent<AudioSource>();
+            if(audioSource != null)
+            {
+                audioSource.Play();
+            }
 
         }
-        if (gameComponents[index].tag == "aCombo")
+        else if (gameComponents[index].tag == "aCombo")
         {
             gameComponents[index].GetComponent<RevealInstructionandCompo>().displayInstrction();
             gameComponents[index].GetComponent<RevealInstructionandCompo>().playAudio();
