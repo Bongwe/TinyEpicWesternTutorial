@@ -17272,8 +17272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClick: {fileID: 1810225660}
-  nextSceneName: 7 Phase 2 Update
-  prevSceneName: 
+  nextSceneName: 
+  prevSceneName: 7 Phase 2 Update
 --- !u!1 &1445985521
 GameObject:
   m_ObjectHideFlags: 0
