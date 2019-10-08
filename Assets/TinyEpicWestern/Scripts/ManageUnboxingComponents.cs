@@ -48,10 +48,10 @@ public class ManageUnboxingComponents : MonoBehaviour
             componentIndex++;
             currentTime = 0;
         }
-        if (componentIndex >= animatedGameComponents.Length)
+        /*if (componentIndex > animatedGameComponents.Length)
         {
             competeMessage.SetActive(true);
-        }
+        }*/
 
     }
 
